@@ -26,4 +26,4 @@
 
 [diff]
 	# Better diff labels: "a/" -> "old/", "b/" -> "new/"
-	mnemonicprefix = true
+	mnemonicPrefix = true
