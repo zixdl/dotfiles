@@ -18,5 +18,5 @@ dotfiles/
 ```bash
 git clone https://github.com/zixdl/dotfiles.git
 cd dotfiles
-./install.sh
+bash install.sh
 ```
