@@ -1,5 +1,8 @@
 # macOS
 .DS_Store
 
+# IDE
+.idea/
+
 # Secrets
 .secrets
