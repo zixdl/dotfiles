@@ -10,7 +10,8 @@ dotfiles/
 ├── macos/        # macOS system preferences
 ├── ssh/          # SSH configuration
 ├── zsh/          # Shell configuration
-└── install.sh    # Symlink setup script
+├── Brewfile      # Homebrew packages
+└── install.sh    # Setup script (symlinks, Homebrew, git config)
 ```
 
 ## Installation
