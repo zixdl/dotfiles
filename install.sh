@@ -21,6 +21,19 @@ link() {
     echo "Linked $dest → $src"
 }
 
+# ---------- Homebrew ----------
+if ! command -v brew &>/dev/null; then
+    echo "Homebrew not found. Installing..."
+    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+    eval "$(/opt/homebrew/bin/brew shellenv)"
+else
+    echo "Homebrew already installed."
+fi
+
+# Install packages from Brewfile
+echo "Installing Homebrew packages..."
+brew bundle --file="$DOTFILES/Brewfile"
+
 # ---------- Git ----------
 link "$DOTFILES/git/.gitconfig" "$HOME/.gitconfig"
 link "$DOTFILES/git/.gitignore_global" "$HOME/.gitignore_global"
