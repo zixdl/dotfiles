@@ -51,6 +51,7 @@ link "$DOTFILES/git/.gitignore_global" "$HOME/.gitignore_global"
 echo ""
 echo "Setting up git user config..."
 echo "This will be used for your git commits."
+
 read -p "Enter your git name: " git_user_name
 read -p "Enter your git email: " git_user_email
 git config --global user.name "$git_user_name"
@@ -59,11 +60,6 @@ git config --global user.email "$git_user_email"
 echo ""
 echo "Git user.name set to: $(git config --global user.name)"
 echo "Git user.email set to: $(git config --global user.email)"
-
-echo ""
-echo "Ignoring local changes to .gitconfig so personal info won't be committed."
-echo "To undo: git update-index --no-skip-worktree git/.gitconfig"
-git -C "$DOTFILES" update-index --skip-worktree git/.gitconfig
 
 echo ""
 echo "Done setting up git user config!"
