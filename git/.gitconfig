@@ -1,29 +1,29 @@
 [user]
-    name = zixdl
-    email = songtranvan2511@gmail.com
+	name = your-name
+	email = your-email
 
 [core]
-    # Use our global .gitignore file
-    excludesfile = ~/.gitignore_global
-    # Prevent issues with unicode filenames
-    precomposeunicode = true
+	# Use our global .gitignore file
+	excludesfile = ~/.gitignore_global
+	# Prevent issues with unicode filenames
+	precomposeunicode = true
 
 [init]
-    # Use "main" as the default branch name instead of "master"
-    defaultBranch = main
+	# Use "main" as the default branch name instead of "master"
+	defaultBranch = main
 
 [pull]
-    # Only allow fast-forward pulls (safer - no surprise merge commits)
-    ff = only
+	# Only allow fast-forward pulls (safer - no surprise merge commits)
+	ff = only
 
 [push]
-    # Only push the current branch (not all branches)
-    default = current
+	# Only push the current branch (not all branches)
+	default = current
 
 [merge]
-    # Show common ancestors in merge conflicts (make them easier to resolve)
-    conflictstyle = diff3
+	# Show common ancestors in merge conflicts (make them easier to resolve)
+	conflictstyle = diff3
 
 [diff]
-    # Better diff labels: "a/" -> "old/", "b/" -> "new/"
-    mnemonicprefix = true
+	# Better diff labels: "a/" -> "old/", "b/" -> "new/"
+	mnemonicprefix = true
