@@ -25,5 +25,6 @@
 	conflictstyle = diff3
 
 [diff]
-	# Better diff labels: "a/" -> "old/", "b/" -> "new/"
+	# Use "old/" and "new/" in ---/+++ lines instead of "a/" and "b/"
+	# Note: the "diff --git a/ b/" header line always uses a/b (hardcoded by git)
 	mnemonicPrefix = true
