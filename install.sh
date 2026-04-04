@@ -39,9 +39,8 @@ link "$DOTFILES/git/.gitconfig" "$HOME/.gitconfig"
 link "$DOTFILES/git/.gitignore_global" "$HOME/.gitignore_global"
 
 # ---------- Zsh ----------
-# Uncomment these when ready:
-# link "$DOTFILES/zsh/.zshrc"     "$HOME/.zshrc"
-# link "$DOTFILES/zsh/.zprofile"  "$HOME/.zprofile"
+link "$DOTFILES/zsh/.zshrc"     "$HOME/.zshrc"
+link "$DOTFILES/zsh/.zprofile"  "$HOME/.zprofile"
 
 # ---------- SSH ----------
 # Uncomment when ready:
