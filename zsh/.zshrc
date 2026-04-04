@@ -6,7 +6,7 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
 fi
 
 # --- Path to dotfiles directory ---
-export DOTFILES="$HOME/dotfiles"
+export DOTFILES="$(cd "$(dirname "$0")" && pwd)"
 
 # --- Load external plugins and themes (installed via Homebrew) ---
 
