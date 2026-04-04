@@ -8,7 +8,7 @@ fi
 # --- Path to dotfiles directory ---
 export DOTFILES="$HOME/dotfiles"
 
-# --- Load external plugins & theme (Homebrew) ---
+# --- Load external plugins and themes (installed via Homebrew) ---
 
 # Powerlevel10k theme
 if [ -f /opt/homebrew/share/powerlevel10k/powerlevel10k.zsh-theme ]; then
